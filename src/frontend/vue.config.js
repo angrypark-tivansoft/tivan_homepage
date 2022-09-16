@@ -4,7 +4,7 @@ module.exports = {
   devServer: {
     proxy: {
       '/vue': {
-        target: 'http://localhost:9000',
+        target: 'http://13.125.211.180:9000',
         changeOrigin: true
       },
     }
