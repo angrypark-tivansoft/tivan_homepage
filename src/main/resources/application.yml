@@ -1,0 +1,33 @@
+server:
+  port: 9000
+
+spring:
+  datasource:
+
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+#    url: jdbc:log4jdbc:mysql://park82ch.synology.me:3306/infiniti?useSSL=false
+#    username: infiniti
+#    password: qlqjs0spro
+
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: 'cs@tivansoft.com'
+    password: 'eyktcwfixlwpajqh'
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+logging:
+  level:
+    jdbc.sqlonly: debug
+    jdbc.audit: off
+    jdbc.connection: off
+    jdbc.resultset: off
+    jdbc.resultsettable: debug
+    jdbc.sqltiming: off
