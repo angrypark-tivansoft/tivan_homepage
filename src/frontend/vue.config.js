@@ -8,8 +8,8 @@ module.exports = {
         changeOrigin: true
       },
     }
-  },
-  indexPath: '../../templates/vue/index.html',
-  publicPath: '/vue',
-  outputDir: path.resolve(__dirname, "../main/resources/static/vue")
+  }
+//  indexPath: '../../templates/vue/index.html',
+//  publicPath: '/vue',
+//  outputDir: path.resolve(__dirname, "../main/resources/static/vue")
 }
