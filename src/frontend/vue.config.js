@@ -8,8 +8,5 @@ module.exports = {
         changeOrigin: true
       },
     }
-  },
-  indexPath: './templates/index.html',
-  publicPath: '/',
-  outputDir: path.resolve(__dirname, "./dist")
+  }
 }
