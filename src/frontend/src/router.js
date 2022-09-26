@@ -7,9 +7,10 @@ const routes = [
         path: '/',
         name: 'home',
         component: Home,
-        title: "Tivansoft"
+        meta: {
+            title: "tivansoft"
+        }
     }
-
 ];
 
 const router = createRouter({
@@ -19,4 +20,5 @@ const router = createRouter({
 });
 
 export default router;
+
 
