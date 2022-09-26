@@ -9,7 +9,7 @@ module.exports = {
       },
     }
   },
-  indexPath: '../../templates/vue/index.html',
-  publicPath: '/vue',
-  outputDir: path.resolve(__dirname, "../main/resources/static/vue")
+  indexPath: './templates/index.html',
+  publicPath: '/',
+  outputDir: path.resolve(__dirname, "./dist")
 }
