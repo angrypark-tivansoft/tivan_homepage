@@ -8,8 +8,5 @@ module.exports = {
         changeOrigin: true
       },
     }
-  },
-  indexPath: '../src/frontend/dist/index.html',
-  outputDir: path.resolve(__dirname, "../src/frontend/dist/")
-
+  }
 }
