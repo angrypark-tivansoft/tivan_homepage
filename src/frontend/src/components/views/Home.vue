@@ -183,6 +183,7 @@
 
 <script>
     import sendmail from '@/api/sendmail';
+    import homeapi from '@/api/home';
     export default {
         name: 'home',
         components : {
@@ -196,8 +197,20 @@
       created() {
 
       },
+      mounted() {
+        this.selectHisList();
 
+      },
       methods: {
+
+        selectHisList: function(){
+          alert("00");
+          homeapi.selectHisList().then(response => {
+            alert("11");
+            console.log(JSON.stringify(response.data));
+          });
+        },
+
         getSend: function(){
 
           if(this.mail == null ||  this.mail == ""){

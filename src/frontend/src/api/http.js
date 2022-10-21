@@ -1,6 +1,6 @@
 import axios from 'axios';
  let baseUrl = 'http://13.125.211.180:9000';
-/*let baseUrl = 'http://localhost:9000';*/
+// let baseUrl = 'http://localhost:9000';
 
 class Http {
     static parseUrl(url) {
@@ -8,6 +8,7 @@ class Http {
     }
 
     static get(url, data = null, config = {}) {
+
         if (data !== null) {
             config['params'] = data;
         }

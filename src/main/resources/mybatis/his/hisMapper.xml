@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.tivansoft.tivan_homepage.common.CommonMapper">
+
+    <select id="selectHisList" resultType="com.tivansoft.tivan_homepage.common.vo.CommonVO">
+        SELECT
+            PRJ_HIS_SEQ AS prjHisSeq  /* 프로젝트 이력SEQ */
+             ,PRJ_TITLE  AS prjTitle   /* 프로젝트 이름 */
+             ,PRJ_CNTN   AS prjCntn    /* 프로젝트 내용 */
+             ,PRJ_TYPE   AS prjType    /* 프로젝트 구분 */
+        FROM CMN_TIVAN_HIS
+        WHERE 1=1
+          AND USE_YN = 'Y'
+          AND DEL_YN = 'N'
+    </select>
+</mapper>

@@ -3,12 +3,10 @@ server:
 
 spring:
   datasource:
-
-#    driver-class-name: com.mysql.cj.jdbc.Driver
-#    driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
-#    url: jdbc:log4jdbc:mysql://park82ch.synology.me:3306/infiniti?useSSL=false
-#    username: infiniti
-#    password: qlqjs0spro
+    driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+    url: jdbc:log4jdbc:mysql://muscat.czwt78mf7f1j.ap-northeast-2.rds.amazonaws.com:3306/muscat?useSSL=false
+    username: admin
+    password: qlqjs0spro
 
 
   mail:
