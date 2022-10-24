@@ -204,9 +204,7 @@
       methods: {
 
         selectHisList: function(){
-          alert("00");
           homeapi.selectHisList().then(response => {
-            alert("11");
             console.log(JSON.stringify(response.data));
           });
         },
